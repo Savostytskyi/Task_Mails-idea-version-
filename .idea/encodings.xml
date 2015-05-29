@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/src/test/java/mail/MailGmailTests.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/mail/MailIUATests.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/mail/MailYandexTests.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/mail/pages/gmail/DraftGmailPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/mail/pages/gmail/MailGmailBoxPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/mail/pages/gmail/MailGmailMainPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/mail/pages/gmail/NewLetterGmailPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/mail/pages/gmail/SentLettersGmailPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/mail/pages/iua/DraftIUAPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/mail/pages/iua/MailIUABoxPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/mail/pages/iua/MailIUAMainPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/mail/pages/iua/NewLetterIUAPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/mail/pages/iua/SentLetterIUAPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/mail/pages/yandex/DraftYandexPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/mail/pages/yandex/MailYandexBoxPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/mail/pages/yandex/MailYandexMainPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/mail/pages/yandex/NewLetterYandexPage.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/test/java/mail/pages/yandex/SentLettersYandexPage.java" charset="UTF-8" />
+    <file url="PROJECT" charset="UTF-8" />
+  </component>
+</project>
