@@ -7,7 +7,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class MailYandexBoxPage {
     private WebDriver driver;
-    @FindBy(xpath = ".//*[@id='js-page']//img[@class='b-ico b-ico_compose']")
+    @FindBy(xpath = "//div[@id='js-page']//a[@href='#compose']/img")
     private WebElement newLetterButton;
 
     public MailYandexBoxPage(WebDriver driver) {
@@ -19,7 +19,4 @@ public class MailYandexBoxPage {
         newLetterButton.click();
         return new NewLetterYandexPage(driver);
     }
-
-
-
 }

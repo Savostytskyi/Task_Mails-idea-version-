@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class DraftGmailPage {
     private WebDriver driver;
 
-    @FindBy(xpath = "//a[@id='gb_71']")
+    @FindBy(xpath = "//a[text()='Выйти']")
     private WebElement toMainPageButton;
 
     @FindBy(xpath = "//a[@aria-haspopup='true']/span")
@@ -30,9 +30,4 @@ public class DraftGmailPage {
         toMainPageButton.click();
         return new MailGmailMainPage(driver);
     }
-
-
-
-
-
 }

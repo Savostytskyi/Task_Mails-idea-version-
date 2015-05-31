@@ -3,12 +3,12 @@ package mail;
 import java.io.IOException;
 import java.util.concurrent.TimeUnit;
 
+import core.PropertyReader;
 import mail.pages.gmail.DraftGmailPage;
 import mail.pages.gmail.MailGmailBoxPage;
 import mail.pages.gmail.MailGmailMainPage;
 import mail.pages.gmail.NewLetterGmailPage;
 import mail.pages.gmail.SentLettersGmailPage;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -25,30 +25,34 @@ public class MailGmailTests {
     private NewLetterGmailPage letter;
     private DraftGmailPage draft;
     private SentLettersGmailPage sent;
-    private String letterTopic = "It is test letter";
-    private String letterText = "Some text for test";
-    private String letterAdress = "savostytskyi.anton@gmail.com";
+    private String letterTopic;
+    private String letterText;
+    private String letterAdress;
     private WebDriverFactory webDriverFactory = new WebDriverFactory();
     private WebDriver driver;
+    private PropertyReader reader;
 
 
     @BeforeClass
     public void beforeClass(){
         try {
-            driver = webDriverFactory.createTariffBuilder("chrome");
+            reader = new PropertyReader();
+            reader.setPropValues("gmail");
+            letterTopic = reader.getSubject();
+            letterText = reader.getTexts();
+            letterAdress = reader.getRecipient();
+            driver = webDriverFactory.createTariffBuilder();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            driver.get("https://accounts.google.com/ServiceLogin");
+            driver.get(reader.getUrl());
         } catch (IOException e) {
             e.printStackTrace();
         }
-
-
     }
 
     @Test(description = "Login to mail")
     public void loginToMail() {
         main = new MailGmailMainPage(driver);
-        box = main.loginInMail("petrov.vas123321123@gmail.com", "123an123");
+        box = main.loginInMail(reader.getLogin(), reader.getPass());
         Assert.assertTrue(isElementPresent(By.xpath("//div[text()='НАПИСАТЬ']")));
     }
 
@@ -63,7 +67,7 @@ public class MailGmailTests {
     public void checkTheLetter() {
         letter = draft.openDraftLetter(letterTopic);
         Assert.assertEquals(driver.findElement(By.xpath("//div[@aria-label='Тело письма']")).getText(), letterText);
-        Assert.assertEquals(driver.findElement(By.xpath("//span[@class='vN Y7BVp a3q']")).getAttribute("email"), letterAdress);
+        Assert.assertEquals(driver.findElement(By.xpath("(//form[@method='POST']//span)[2]")).getAttribute("email"), letterAdress);
     }
 
     @Test(description = "Send the letter", dependsOnMethods = { "checkTheLetter" })
@@ -71,7 +75,6 @@ public class MailGmailTests {
         sent = letter.sendDraftLetter();
         Assert.assertTrue(isElementPresent(By.xpath("//span[text()='"+letterTopic+"']")));
         sent.goToGrft();
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
         Assert.assertTrue(isElementPresent(By.xpath("//span[text()='"+letterTopic+"']")));
 
     }
@@ -86,5 +89,4 @@ public class MailGmailTests {
     private boolean isElementPresent(By by) {
         return !driver.findElements(by).isEmpty();
     }
-
 }

@@ -11,7 +11,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class SentLettersGmailPage {
     private WebDriver driver;
 
-    @FindBy(xpath = "(//a[@aria-label])[3]")
+    @FindBy(xpath = "(//div[@role='navigation']//a)[4]")
     private WebElement toDraftItem;
 
     public SentLettersGmailPage(WebDriver driver) {
@@ -21,8 +21,7 @@ public class SentLettersGmailPage {
 
     public void goToGrft() {
         toDraftItem.click();
-        (new WebDriverWait(driver, 20))
-                .until(ExpectedConditions.titleContains("Черновики"));
+
     }
 }
 

@@ -2,12 +2,14 @@ package mail.pages.gmail;
 
 
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import static com.gargoylesoftware.htmlunit.WebAssert.assertElementPresent;
 
 public class MailGmailMainPage {
     private WebDriver driver;
@@ -23,6 +25,9 @@ public class MailGmailMainPage {
     @FindBy(xpath = "//a[@title='выйти']")
     private WebElement logoutButton;
 
+    @FindBy(xpath = "//input[@id='next']")
+    private WebElement nextButton;
+
     @FindBy(xpath = "//a[@title='Сервисы']")
     private WebElement servicesButton;
 
@@ -36,8 +41,14 @@ public class MailGmailMainPage {
 
     public MailGmailBoxPage loginInMail(String login, String password) {
         loginField.sendKeys(login);
-        passwordField.sendKeys(password);
-        loginButton.click();
+        if (isElementPresent(By.xpath("//input[@id='Passwd']"))) {
+            passwordField.sendKeys(password);
+            loginButton.click();
+        } else {
+            nextButton.click();
+            passwordField.sendKeys(password);
+            loginButton.click();
+        }
         servicesButton.click();
         mailButton.click();
 
@@ -51,6 +62,8 @@ public class MailGmailMainPage {
 
     }
 
-
+    private boolean isElementPresent(By by) {
+        return !driver.findElements(by).isEmpty();
+    }
 
 }

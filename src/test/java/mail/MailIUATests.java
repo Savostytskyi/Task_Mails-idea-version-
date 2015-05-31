@@ -1,6 +1,7 @@
 package mail;
 
 
+import core.PropertyReader;
 import mail.pages.iua.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,19 +21,24 @@ public class MailIUATests extends WebDriverFactory {
     private NewLetterIUAPage letter;
     private DraftIUAPage draft;
     private SentLetterIUAPage sent;
-    private String letterTopic = "It is test letter";
-    private String letterText = "Some text for test";
-    private String letterAdress = "savostytskyi.anton@gmail.com";
+    private String letterTopic;
+    private String letterText;
+    private String letterAdress;
     private WebDriverFactory webDriverFactory = new WebDriverFactory();
     private WebDriver driver;
-
+    private PropertyReader reader;
 
     @BeforeClass
     public void beforeClass() {
         try {
-            driver = webDriverFactory.createTariffBuilder("firefox");
+            reader = new PropertyReader();
+            reader.setPropValues("iua");
+            letterTopic = reader.getSubject();
+            letterText = reader.getTexts();
+            letterAdress = reader.getRecipient();
+            driver = webDriverFactory.createTariffBuilder();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-            driver.get("http://www.i.ua/");
+            driver.get(reader.getUrl());
 
         } catch (IOException e) {
             e.printStackTrace();
@@ -43,7 +49,7 @@ public class MailIUATests extends WebDriverFactory {
     @Test(description = "Login to mail")
     public void loginToMail() {
         main = new MailIUAMainPage(driver);
-        box = main.loginInMail("test_mail_box@i.ua", "testmail");
+        box = main.loginInMail(reader.getLogin(), reader.getPass());
         Assert.assertTrue(isElementPresent(By.xpath("//p[@class='make_message']//a")));
     }
 
@@ -51,7 +57,7 @@ public class MailIUATests extends WebDriverFactory {
     public void beginCreationOfLetter() {
         letter = box.chouseNewLetter();
         draft = letter.createNewLetter(letterAdress, letterTopic, letterText);
-        Assert.assertEquals(driver.findElement(By.xpath("//*[@id='mesgList']//span[@class='sbj']/span")).getText(), letterTopic);
+        Assert.assertEquals(driver.findElement(By.xpath("//div[@id='mesgList']//span[@class='sbj']/span")).getText(), letterTopic);
     }
 
     @Test(description = "Checking the contains of letter", dependsOnMethods = { "beginCreationOfLetter" })

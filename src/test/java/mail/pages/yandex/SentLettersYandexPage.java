@@ -15,7 +15,7 @@ public class SentLettersYandexPage {
         PageFactory.initElements(driver, this);
     }
 
-    public void goToGrft() {
+    public void goToDraft() {
         toDraftItem.click();
     }
 }

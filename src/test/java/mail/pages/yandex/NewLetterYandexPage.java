@@ -9,7 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 
 public class NewLetterYandexPage {
     private WebDriver driver;
-    @FindBy(xpath = "//*[@class='b-yabble b-yabble_focused']/descendant-or-self::input")
+    @FindBy(xpath = "//div[@class='b-yabble b-yabble_focused']/descendant-or-self::input")
     private WebElement toTextArea;
 
     @FindBy(xpath = "//input[@id='compose-subj']")
@@ -18,7 +18,7 @@ public class NewLetterYandexPage {
     @FindBy(xpath = "//textarea[@id='compose-send']")
     private WebElement letterTextArea;
 
-    @FindBy(xpath = "//button[@id='nb-22']//span[@class='_nb-button-content']")
+    @FindBy(xpath = "//button[@id='nb-22']/span/span")
     private WebElement prevButton;
 
     @FindBy(xpath = "//button[@data-nb='button']//span[text()='Сохранить и перейти']")
@@ -52,8 +52,6 @@ public class NewLetterYandexPage {
     public SentLettersYandexPage sendDraftLetter() {
         submitButton.click();
         sentItem.click();
-
         return new SentLettersYandexPage(driver);
     }
-
 }

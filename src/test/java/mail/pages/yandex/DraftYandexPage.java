@@ -8,10 +8,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class DraftYandexPage {
     private WebDriver driver;
-    @FindBy(xpath = "//*[@id='nb-1']/span[2]")
+    @FindBy(xpath = "//a[@id='nb-1']/span[2]")
     private WebElement popMenuItem;
 
-    @FindBy(xpath = "//*[@id='user-dropdown-popup']//a[@data-metric='Меню сервисов:Выход']")
+    @FindBy(xpath = "//div[@id='user-dropdown-popup']//a[@data-metric='Меню сервисов:Выход']")
     private WebElement toMainPageButton;
 
     public DraftYandexPage(WebDriver driver) {

@@ -8,30 +8,25 @@ import org.openqa.selenium.WebDriver;
 import driver.types.ChromeDriverBuilder;
 import driver.types.FireFoxDriverBuilder;
 import driver.types.IEDriverBuilder;
-import driver.types.OperaDriverBuilder;
-import driver.types.RemoteCloudDriverBuilder;
 
 public class WebDriverFactory {
 
     public WebDriver driver;
 
+    public static final String typeDriver="firefox";
 
     private enum TypeDriver {
-        FIREFOX, OPERA, CHROME, IE, CLOUD
+        FIREFOX, CHROME, IE
     }
-    public WebDriver createTariffBuilder(String typeDriver) throws MalformedURLException {
+    public WebDriver createTariffBuilder() throws MalformedURLException {
         TypeDriver type = TypeDriver.valueOf(typeDriver.toUpperCase());
         switch (type) {
             case FIREFOX:
                 return new FireFoxDriverBuilder().initializeWebDriver();
-            case OPERA:
-                return new OperaDriverBuilder().initializeWebDriver();
             case CHROME:
                 return new ChromeDriverBuilder().initializeWebDriver();
             case IE:
                 return new IEDriverBuilder().initializeWebDriver();
-            case CLOUD:
-                return new RemoteCloudDriverBuilder().initializeWebDriver();
             default:
                 throw new EnumConstantNotPresentException(
                         type.getDeclaringClass(), type.name());

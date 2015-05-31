@@ -26,7 +26,7 @@ public class NewLetterGmailPage {
     @FindBy(xpath = "//a[text()='Отправленные']")
     private WebElement sentLettersItem;
 
-    @FindBy(xpath = "(//a[@aria-label])[3]")
+    @FindBy(xpath = "(//div[@role='navigation']//a)[4]")
     private WebElement toDraftItem;
 
     public NewLetterGmailPage(WebDriver driver) {

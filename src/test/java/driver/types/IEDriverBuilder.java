@@ -13,5 +13,4 @@ public class IEDriverBuilder {
         WebDriver driver = new InternetExplorerDriver();
         return driver;
     }
-
 }
