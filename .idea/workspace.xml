@@ -2,52 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f6b8489-125d-4ecd-8b92-2adf90573d52" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/core/PropertyReader.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/resources/mails.properties" />
-      <change type="DELETED" beforePath="D:\IdeaProject\Task_Mails-idea-version-\.idea\libraries\Maven__org_uncommons_reportng_1_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProject\Task_Mails-idea-version-\.idea\libraries\Maven__velocity_velocity_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProject\Task_Mails-idea-version-\.idea\libraries\Maven__velocity_velocity_dep_1_4.xml" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProject\Task_Mails-idea-version-\src\test\java\driver\types\OperaDriverBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProject\Task_Mails-idea-version-\src\test\java\driver\types\RemoteCloudDriverBuilder.java" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProject\Task_Mails-idea-version-\target\test-classes\driver\types\ChromeDriverBuilder$1$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProject\Task_Mails-idea-version-\target\test-classes\driver\types\ChromeDriverBuilder$1.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProject\Task_Mails-idea-version-\target\test-classes\driver\types\OperaDriverBuilder.class" afterPath="" />
-      <change type="DELETED" beforePath="D:\IdeaProject\Task_Mails-idea-version-\target\test-classes\driver\types\RemoteCloudDriverBuilder.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/driver/types/ChromeDriverBuilder.class" afterPath="$PROJECT_DIR$/target/test-classes/driver/types/ChromeDriverBuilder.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/mail/pages/gmail/DraftGmailPage.class" afterPath="$PROJECT_DIR$/target/test-classes/mail/pages/gmail/DraftGmailPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/mail/pages/yandex/DraftYandexPage.class" afterPath="$PROJECT_DIR$/target/test-classes/mail/pages/yandex/DraftYandexPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/mail/pages/gmail/MailGmailMainPage.class" afterPath="$PROJECT_DIR$/target/test-classes/mail/pages/gmail/MailGmailMainPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/mail/MailGmailTests.class" afterPath="$PROJECT_DIR$/target/test-classes/mail/MailGmailTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/mail/MailIUATests.class" afterPath="$PROJECT_DIR$/target/test-classes/mail/MailIUATests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/mail/pages/yandex/MailYandexBoxPage.class" afterPath="$PROJECT_DIR$/target/test-classes/mail/pages/yandex/MailYandexBoxPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/mail/MailYandexTests.class" afterPath="$PROJECT_DIR$/target/test-classes/mail/MailYandexTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/mail/pages/gmail/NewLetterGmailPage.class" afterPath="$PROJECT_DIR$/target/test-classes/mail/pages/gmail/NewLetterGmailPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/mail/pages/yandex/NewLetterYandexPage.class" afterPath="$PROJECT_DIR$/target/test-classes/mail/pages/yandex/NewLetterYandexPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/mail/pages/gmail/SentLettersGmailPage.class" afterPath="$PROJECT_DIR$/target/test-classes/mail/pages/gmail/SentLettersGmailPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/mail/pages/yandex/SentLettersYandexPage.class" afterPath="$PROJECT_DIR$/target/test-classes/mail/pages/yandex/SentLettersYandexPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/driver/WebDriverFactory$1.class" afterPath="$PROJECT_DIR$/target/test-classes/driver/WebDriverFactory$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/driver/WebDriverFactory$TypeDriver.class" afterPath="$PROJECT_DIR$/target/test-classes/driver/WebDriverFactory$TypeDriver.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/driver/WebDriverFactory.class" afterPath="$PROJECT_DIR$/target/test-classes/driver/WebDriverFactory.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/driver/types/ChromeDriverBuilder.java" afterPath="$PROJECT_DIR$/src/test/java/driver/types/ChromeDriverBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/mail/pages/gmail/DraftGmailPage.java" afterPath="$PROJECT_DIR$/src/test/java/mail/pages/gmail/DraftGmailPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/mail/pages/yandex/DraftYandexPage.java" afterPath="$PROJECT_DIR$/src/test/java/mail/pages/yandex/DraftYandexPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/driver/types/IEDriverBuilder.java" afterPath="$PROJECT_DIR$/src/test/java/driver/types/IEDriverBuilder.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/mail/pages/gmail/MailGmailMainPage.java" afterPath="$PROJECT_DIR$/src/test/java/mail/pages/gmail/MailGmailMainPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/mail/MailGmailTests.java" afterPath="$PROJECT_DIR$/src/test/java/mail/MailGmailTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/mail/pages/iua/MailIUAMainPage.java" afterPath="$PROJECT_DIR$/src/test/java/mail/pages/iua/MailIUAMainPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/mail/MailIUATests.java" afterPath="$PROJECT_DIR$/src/test/java/mail/MailIUATests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/mail/pages/yandex/MailYandexBoxPage.java" afterPath="$PROJECT_DIR$/src/test/java/mail/pages/yandex/MailYandexBoxPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/mail/MailYandexTests.java" afterPath="$PROJECT_DIR$/src/test/java/mail/MailYandexTests.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/mail/pages/gmail/NewLetterGmailPage.java" afterPath="$PROJECT_DIR$/src/test/java/mail/pages/gmail/NewLetterGmailPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/mail/pages/yandex/NewLetterYandexPage.java" afterPath="$PROJECT_DIR$/src/test/java/mail/pages/yandex/NewLetterYandexPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/POMailServices.iml" afterPath="$PROJECT_DIR$/POMailServices.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/mail/pages/gmail/SentLettersGmailPage.java" afterPath="$PROJECT_DIR$/src/test/java/mail/pages/gmail/SentLettersGmailPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/mail/pages/yandex/SentLettersYandexPage.java" afterPath="$PROJECT_DIR$/src/test/java/mail/pages/yandex/SentLettersYandexPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/driver/WebDriverFactory.java" afterPath="$PROJECT_DIR$/src/test/java/driver/WebDriverFactory.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="D:\IdeaProject\Task_Mails-idea-version-\testng.xml" afterPath="$PROJECT_DIR$/src/testng.xml" />
     </list>
     <ignored path="POMailServices.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,12 +49,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MailGmailTests.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="MailGmailTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/mail/MailGmailTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="43" column="58" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
-              <folding />
+            <state vertical-scroll-proportion="0.4273743">
+              <caret line="51" column="39" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -123,11 +81,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="WebDriverFactory.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="WebDriverFactory.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/driver/WebDriverFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5698324">
-              <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
               <folding />
             </state>
           </provider>
@@ -199,9 +157,9 @@
         <option value="$PROJECT_DIR$/src/test/java/mail/pages/gmail/SentLettersGmailPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/mail/pages/gmail/NewLetterGmailPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/driver/WebDriverFactory.java" />
-        <option value="$PROJECT_DIR$/src/test/java/mail/MailGmailTests.java" />
         <option value="$PROJECT_DIR$/src/test/java/mail/MailIUATests.java" />
         <option value="$PROJECT_DIR$/src/test/java/mail/MailYandexTests.java" />
+        <option value="$PROJECT_DIR$/src/test/java/mail/MailGmailTests.java" />
       </list>
     </option>
   </component>
@@ -835,6 +793,13 @@
       <option name="number" value="Default" />
       <updated>1432907971952</updated>
     </task>
+    <task id="LOCAL-00001" summary="mails task v1.0.1">
+      <created>1433107073275</created>
+      <option name="number" value="00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1433107073275</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -878,9 +843,13 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="mails task v1.0.1" />
+    <option name="LAST_COMMIT_MESSAGE" value="mails task v1.0.1" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -909,7 +878,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -971,7 +942,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="23" column="35" selection-start-line="23" selection-start-column="35" selection-end-line="23" selection-end-column="35" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1215,14 +1188,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/mail/MailGmailTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="43" column="58" selection-start-line="43" selection-start-column="58" selection-end-line="43" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/mail/MailIUATests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1241,9 +1206,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/driver/WebDriverFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5698324">
-          <caret line="24" column="38" selection-start-line="24" selection-start-column="38" selection-end-line="24" selection-end-column="38" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/mail/MailGmailTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4273743">
+          <caret line="51" column="39" selection-start-line="51" selection-start-column="39" selection-end-line="51" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

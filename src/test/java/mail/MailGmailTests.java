@@ -49,7 +49,7 @@ public class MailGmailTests {
         }
     }
 
-    @Test(description = "Login to mail")
+    @Test(description = "Login to mail ")
     public void loginToMail() {
         main = new MailGmailMainPage(driver);
         box = main.loginInMail(reader.getLogin(), reader.getPass());
