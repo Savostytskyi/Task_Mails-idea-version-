@@ -25,6 +25,8 @@ public class MailIUAMainPage {
     }
 
     public MailIUABoxPage loginInMail(String login, String password) {
+        loginField.clear();
+        passwordField.clear();
         loginField.sendKeys(login);
         passwordField.sendKeys(password);
         loginButton.click();

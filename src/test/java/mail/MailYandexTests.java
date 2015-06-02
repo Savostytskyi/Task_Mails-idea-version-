@@ -55,6 +55,7 @@ public class MailYandexTests extends WebDriverFactory {
         letter = box.chouseNewLetter();
         draft = letter.createNewLetter(letterAdress, letterTopic, letterText);
         Assert.assertEquals(driver.findElement(By.xpath("//span[@title='"+letterTopic+"']")).getText(), letterTopic);
+       // sent.goToDraft();
     }
 
     @Test(description = "Checking the contains of letter", dependsOnMethods = { "beginCreationOfLetter" })
@@ -69,8 +70,8 @@ public class MailYandexTests extends WebDriverFactory {
         sent = letter.sendDraftLetter();
         Assert.assertTrue(isElementPresent(By.xpath("//span[@title='"+letterTopic+"']")));
         sent.goToDraft();
-        driver.manage().timeouts().implicitlyWait(2, TimeUnit.SECONDS);
-        Assert.assertFalse(isElementPresent(By.xpath("//div[@class='block-messages-wrap']//span[@title='"+letterTopic+"']")));
+        driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+        Assert.assertTrue(isElementPresent(By.xpath("//div[@class='block-messages-wrap']//span[@title='"+letterTopic+"']")));
     }
 
     @AfterClass

@@ -13,7 +13,7 @@ public class MailYandexMainPage {
     @FindBy(xpath = "//label[@id='nb-2']/span/input")
     private WebElement passwordField;
 
-    @FindBy(xpath = "//span[text()='Войти']")
+    @FindBy(xpath = "(//button[@type='submit'])[1]")
     private WebElement loginButton;
 
     public MailYandexMainPage(WebDriver driver) {
@@ -22,6 +22,8 @@ public class MailYandexMainPage {
     }
 
     public MailYandexBoxPage loginInMail(String login, String password) {
+        loginField.clear();
+        passwordField.clear();
         loginField.sendKeys(login);
         passwordField.sendKeys(password);
         loginButton.click();

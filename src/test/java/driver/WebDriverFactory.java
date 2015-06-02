@@ -13,7 +13,7 @@ public class WebDriverFactory {
 
     public WebDriver driver;
 
-    public static final String typeDriver="firefox";
+    public static final String typeDriver="ie";
 
     private enum TypeDriver {
         FIREFOX, CHROME, IE
